@@ -140,10 +140,12 @@ button {
   font-size: 0.85rem;
 }
 
-.feedback h2.correct {
+.feedback h2.correct,
+.correct {
   color: var(--correct);
 }
-.feedback h2.incorrect {
+.feedback h2.incorrect,
+.incorrect {
   color: var(--incorrect);
 }
 
@@ -204,6 +206,98 @@ button {
 .piano-key.is-answer {
   outline: 3px solid var(--accent);
   outline-offset: -3px;
+}
+.piano-key.is-held {
+  background: var(--accent);
+}
+.piano-key.black.is-held {
+  background: #2a9d93;
+}
+
+.vamp {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+.vamp-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.vamp-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.vamp-key strong {
+  min-width: 28px;
+}
+.dim {
+  color: var(--dim);
+}
+.step-button {
+  background: var(--panel-2);
+  border: 1px solid #2a3240;
+  color: var(--text);
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.vamp-now {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 4px 0 0;
+}
+.vamp-next {
+  margin: 0;
+}
+.vamp-scale {
+  margin: 0;
+  color: var(--text);
+}
+.vamp-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin: 6px 0;
+}
+.view-button {
+  background: var(--panel-2);
+  border: 1px solid #2a3240;
+  color: var(--dim);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.view-button.active {
+  color: #0b1016;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.next.stop {
+  background: var(--incorrect);
+}
+.ear-overlay {
+  width: 100%;
+  background: var(--panel-2);
+  border: 1px solid #2a3240;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 .piano-key-label {
   position: absolute;

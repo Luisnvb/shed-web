@@ -40,8 +40,9 @@ import { getSynth } from '../audio/synth'
 import { playStimulus } from './stimulus'
 import Piano from './Piano'
 import ChoiceList from './ChoiceList'
+import VampMode from './Vamp'
 
-type Screen = 'menu' | 'question' | 'feedback' | 'summary'
+type Screen = 'menu' | 'question' | 'feedback' | 'summary' | 'vamp'
 
 const MAX_LEVEL = 2
 const POOLED_TYPES = new Set([ExerciseType.Degree, ExerciseType.ChordQuality, ExerciseType.Tension, ExerciseType.Scale])
@@ -261,8 +262,14 @@ export default function App() {
               <span className="menu-item-hint">{EXERCISE_HINTS[t]}</span>
             </button>
           ))}
+          <button className="menu-item" onClick={() => setScreen('vamp')}>
+            <span className="menu-item-name">Vamp mode</span>
+            <span className="menu-item-hint">Loop a progression and improvise over it.</span>
+          </button>
         </div>
       )}
+
+      {screen === 'vamp' && <VampMode onExit={() => setScreen('menu')} />}
 
       {screen === 'question' && question && (
         <div className="question">
