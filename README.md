@@ -4,7 +4,7 @@
 
 A browser-based jazz ear-training trainer, carrying over the theory core, exercise design and pedagogy of [Shed](https://github.com/Luisnvb/fm1-shed) — originally built for the M-VAVE FM-1 synthesizer — to a standalone web app anyone can use, no hardware required.
 
-Nine exercises: functional degree, chord quality, melodic interval, harmonic interval, dominant tension, arpeggio, scale/mode, bass movement and melodic dictation. Sessions adapt their difficulty to your streak and use spaced repetition to resurface what you keep missing, across all 12 keys. **Vamp mode** loops a chord progression (bass + comping, 5 named vamps) while you improvise over it on an on-screen piano, with chord/scale-tone key guidance (Arpeggio/Scale/Guide/None views) and an "ear" round that quizzes you on what's sounding.
+Nine exercises: functional degree, chord quality, melodic interval, harmonic interval, dominant tension, arpeggio, scale/mode, bass movement and melodic dictation — plus Vamp mode's ear rounds. Sessions adapt their difficulty to your streak and use spaced repetition to resurface what you keep missing, across all 12 keys. **Vamp mode** loops a chord progression (bass + comping, 5 named vamps) while you improvise over it on an on-screen piano, with chord/scale-tone key guidance (Arpeggio/Scale/Guide/None views) and an "ear" round that quizzes you on what's sounding.
 
 ![The main menu: the 9 exercises, each with a one-line hint](docs/menu.png)
 
