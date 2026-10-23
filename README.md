@@ -6,6 +6,8 @@ A browser-based jazz ear-training trainer, carrying over the theory core, exerci
 
 Nine exercises: functional degree, chord quality, melodic interval, harmonic interval, dominant tension, arpeggio, scale/mode, bass movement and melodic dictation. Sessions adapt their difficulty to your streak and use spaced repetition to resurface what you keep missing, across all 12 keys. **Vamp mode** loops a chord progression (bass + comping, 5 named vamps) while you improvise over it on an on-screen piano, with chord/scale-tone key guidance (Arpeggio/Scale/Guide/None views) and an "ear" round that quizzes you on what's sounding.
 
+![The main menu: the 9 exercises, each with a one-line hint](docs/menu.png)
+
 ![Vamp mode: switching progressions, starting the loop, changing the key-guidance view and playing along](docs/vamp-mode.gif)
 
 Try it live: **[shed-web.vercel.app](https://shed-web.vercel.app)**
